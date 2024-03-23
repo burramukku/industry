@@ -1,0 +1,159 @@
+<!Doctype html>
+<html>
+<style>
+  <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navigation Bar Styles */
+        nav {
+          background-color: purple;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border: 2px solid black;
+            color:white;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color:white;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            color:white;
+        }
+
+        .nav-links li {
+            margin-right: 10px;
+            color:white;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            transition: color 0.3s ease-in-out;
+            color:whitesmoke;
+        }
+
+        .nav-links a:hover {
+            color: #021374;
+        }
+        .city:hover{
+          transform:scale(1.04);
+          transition:ease 0.5s;
+        }
+
+.btn-group button {
+  background-color: #04AA6D; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; 
+}
+
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
+.mySlides{
+  border: 3px solid black;
+}
+</style>
+<body>
+
+  <nav>
+    <div class="logo"><b>VIGNAN THE ONLINE LEARNING PLATFORM</b></div>
+    <ul class="nav-links">
+        <li><a href="hp.html"><b>Home</b></a></li>
+        <li><a href="courses.html"><b>Courses</b></a></li>
+        <li><a href="pay.html"><b>Subscription</b></a></li>
+        <li><a href="aboutus.html"><b>About</b></a></li>
+        <li><a href="signin.html"><b>Login</b></a></li>
+    </ul>
+</nav>
+<br>
+</body>
+</html>
+<!-- Slide Show -->
+<center><section>
+  <img class="mySlides" src="olcour.jpg"
+  style="width:90%"
+  style="height:10%">
+  <img class="mySlides" src="web.jpeg"
+  style="width:90%"
+  style="height:30%">
+  <img class="mySlides" src="rvr.png"
+  style="width:90%"
+  style="height:30%">
+</section>
+</html>
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.city {
+  background-color: tomato;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="city">
+<h2>B.TECH</h2>
+<p>Courses of B.TECH.</p>
+</div> 
+
+<div class="city">
+<h2>DEGREE</h2>
+<p>Courses of DEGREE.</p>
+</div>
+
+<div class="city">
+<h2>M.TECH</h2>
+<p>Courses of M.TECH.</p>
+</div>
+
+</body>
+</html>

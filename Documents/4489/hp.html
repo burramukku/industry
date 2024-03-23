@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navigation Bar Styles */
+        nav {
+            background-color: purple;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            color:white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border: 2px solid black;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color:white;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            color:white;
+        }
+
+        .nav-links li {
+            margin-right: 10px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: whitesmoke;
+            font-size: 16px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-links a:hover {
+            color: #021374;
+        }
+
+        /* Slide Show Styles */
+        .mySlides {
+            width: 80%;
+            display: none;
+            border: 3px solid black;
+        }
+
+        /* Band Description Styles */
+        .band-description {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Band Members Styles */
+        .band-members {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        .band-member {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .band-member img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        /* Footer Styles */
+        footer {
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo"><b>VIGNAN THE ONLINE LEARNING PLATFORM</b></div>
+        <ul class="nav-links">
+            <li><a href="hp.html"><b>Home</b></a></li>
+            <li><a href="courses.html"><b>Courses</b></a></li>
+            <li><a href="pay.html"><b>Subscription</b></a></li>
+            <li><a href="aboutus.html"><b>About</b></a></li>
+            <li><a href="signin.html"><b>Login</b></a></li>
+        </ul>
+</nav>
+<br>
+
+<!-- Slide Show -->
+<section>
+    <center>
+        <img class="mySlides" src="Online-Learning-Platforms-1024x682.jpg" alt="Slide 1">
+        <img class="mySlides" src="onl.jpeg" alt="Slide 2">
+        <img class="mySlides" src="on2.jpg" alt="Slide 3">
+    </center>
+</section>
+
+<!-- Band Description -->
+<section class="band-description">
+    <h2>LEARN</h2>
+    <p><i>Online learning</i></p>
+    <p>An online learning platform allows students to access and absorb educational content in a strictly digital fashion, either in groups or individually. Online learning can take place live at set times or entail pre-recorded lessons for students to complete on their own time.</p>
+</section>
+
+<!-- Band Members -->
+<section class="band-members">
+    <article class="band-member">
+        <p>EXAMPLE</p>
+        <img src="im.jpeg" alt="John">
+        <p>ONLINE LEARNING IS EASY.</p>
+    </article>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2021-2023 by Refsnes Data. All Rights Reserved.</p>
+</footer>
+
+<script>
+    // Automatic Slideshow - change image every 3 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+            myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 3000);
+    }
+</script>
+
+</body>
+</html>

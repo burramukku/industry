@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canvas Drawing</title>
+<style>
+canvas {
+border: 1px solid black;
+display: block;
+margin: 0 auto;
+}
+</style>
+</head>
+<body>
+<canvas id="myCanvas" width="500" height="400"></canvas>
+<script>
+const canvas = document.getElementById("myCanvas");
+const ctx = canvas.getContext("2d");
+// Draw a rectangle
+ctx.fillStyle = "plum";
+ctx.fillRect(50, 50, 100, 100);
+// Draw a circle
+ctx.beginPath();
+ctx.arc(250, 150, 50, 0, Math.PI * 2);
+ctx.fillStyle = "powderblue";
+ctx.fill();
+// Draw a line
+ctx.beginPath();
+ctx.moveTo(50, 250);
+ctx.lineTo(450, 250);
+ctx.strokeStyle = "pink";
+ctx.lineWidth = 5;
+ctx.stroke();
+</script>
+</body>
+</html>
